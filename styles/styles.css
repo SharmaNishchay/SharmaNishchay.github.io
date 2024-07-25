@@ -38,6 +38,17 @@ body {
     object-fit: cover; /* Ensure the video covers the container */
 }
 
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem; /* Reduce padding for mobile devices */
+    }
+
+    .centered-video {
+        height: 20vh; /* Reduce height for mobile devices */
+    }
+}
+
 section {
     margin: 2rem 0; /* Add margin between sections */
     width: 100%;
