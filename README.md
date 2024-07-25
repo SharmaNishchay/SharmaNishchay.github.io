@@ -1,4 +1,4 @@
-# Nischay Sharma's Portfolio
+# Nishchay Sharma's Portfolio
 
 Welcome to my portfolio website! This site showcases my skills, experiences, and projects (coming soon). The goal is to provide a comprehensive overview of my work in software development, interface design, and narrative creation.
 
