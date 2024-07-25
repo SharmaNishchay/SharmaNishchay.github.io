@@ -23,23 +23,31 @@ body {
     padding: 1rem; /* Adjust padding as needed */
 }
 
-.centered-video {
+.centered-image {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%; /* Full width */
-    height: 30vh; /* Fixed height */
-    overflow: hidden; /* Hide overflow to maintain the container size */
+    height: 30vh; /* Adjust height as needed */
 }
 
-#header-video {
-    width: auto; /* Auto width to maintain aspect ratio */
-    height: 100%; /* Fixed height */
-    object-fit: cover; /* Ensure the video covers the container */
+.centered-image img {
+    max-width: 60%; /* Adjust width as needed */
+    max-height: 100%; /* Maintain aspect ratio and fit within container */
 }
 
 section {
     margin: 2rem 0; /* Add margin between sections */
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    padding: 1rem;
+    text-align: center;
+}
+
+
+section {
     width: 100%;
     max-width: 1200px; /* Max width for content alignment */
     padding: 2rem;
@@ -54,11 +62,10 @@ section {
 }
 
 footer {
-    margin-top: auto; /* Push the footer to the bottom */
-    padding: 1rem;
-    text-align: center;
     background: #333; /* Dark gray background for the footer */
     color: white;
+    text-align: center;
+    padding: 1rem;
     width: 100%;
     max-width: 1200px; /* Max width for alignment */
     margin-top: 2rem; /* Space above footer */
