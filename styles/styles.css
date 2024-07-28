@@ -38,7 +38,6 @@ body {
     object-fit: cover; /* Ensure the video covers the container */
 }
 
-/* Style for the section containing the image */
 #intro-image {
     width: 100%; /* Full width */
     display: flex;
@@ -47,8 +46,9 @@ body {
 }
 
 #intro-image img {
-    max-width: 80%; /* Default max-width */
+    width: 100%; /* Full width of its container */
     height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it does not exceed container width */
     pointer-events: none; /* Make the image unclickable */
     user-select: none; /* Prevent the image from being selected */
 }
@@ -56,7 +56,7 @@ body {
 /* Media Query for mobile devices */
 @media (max-width: 768px) {
     #intro-image img {
-        max-width: 90%; /* Adjust width for mobile devices */
+        width: 100%; /* Full width on mobile devices */
     }
 }
 
