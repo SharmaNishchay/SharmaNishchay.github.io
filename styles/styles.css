@@ -38,6 +38,21 @@ body {
     object-fit: cover; /* Ensure the video covers the container */
 }
 
+/* Style for the section containing the image */
+#intro-image {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin: 2rem 0; /* Space above and below the image section */
+}
+
+#intro-image img {
+    max-width: 80%; /* Adjust to fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    pointer-events: none; /* Make the image unclickable */
+    user-select: none; /* Prevent the image from being selected */
+}
+
 /* Media Query for mobile devices */
 @media (max-width: 768px) {
     .header {
