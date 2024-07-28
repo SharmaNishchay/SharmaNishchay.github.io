@@ -47,10 +47,17 @@ body {
 }
 
 #intro-image img {
-    max-width: 80%; /* Adjust to fit within the container */
+    max-width: 80%; /* Default max-width */
     height: auto; /* Maintain aspect ratio */
     pointer-events: none; /* Make the image unclickable */
     user-select: none; /* Prevent the image from being selected */
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    #intro-image img {
+        max-width: 90%; /* Adjust width for mobile devices */
+    }
 }
 
 /* Media Query for mobile devices */
