@@ -53,21 +53,6 @@ body {
     user-select: none; /* Prevent the image from being selected */
 }
 
-/* Media Query for mobile devices */
-@media (max-width: 768px) {
-    #intro-image img {
-        width: 100%; /* Full width on mobile devices */
-    }
-
-    .header {
-        padding: 0.5rem; /* Reduce padding for mobile devices */
-    }
-
-    .centered-video {
-        height: 20vh; /* Reduce height for mobile devices */
-    }
-}
-
 section {
     margin: 2rem 0; /* Add margin between sections */
     width: 100%;
@@ -75,12 +60,14 @@ section {
     padding: 2rem;
     margin-bottom: 2rem; /* Space between sections */
 }
+
 .center.headings {
     font-family: 'Stopmotion', sans-serif;
     color: #b7ab98;
     font-size: 2.5em; /* Adjust the size as needed */
     text-align: center;
 }
+
 #about-section {
     max-width: 1000px; /* Limit width for better readability */
     margin: 0 auto; /* Center align container */
@@ -90,51 +77,45 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     color: #ffffff; /* White text color for contrast */
 }
-/*#about-section p {*/
-/*    font-size: 1rem; !* Standard font size for paragraphs *!*/
-/*    color: #e0e0e0; !* Lighter color for text *!*/
-/*    line-height: 1.6; !* Line height for readability *!*/
-/*    margin-bottom: 20px; !* Space below paragraphs *!*/
-/*}*/
-#about {
+
+#ab {
     padding: 60px 20px; /* Adequate padding for spacing */
     text-align: center; /* Center align text */
 }
-.abt{
+
+.abt {
     text-align: center;
     font-family: 'Stopmotion', sans-serif;
     color: #b7ab98;
     font-size: 2.5em; /* Adjust the size as needed */
 }
 
-.text{
+.text {
     text-align: center;
     font-family: 'TT Octosquares Trl', sans-serif;
     color: whitesmoke;
     font-size: 1.5em; /* Adjust the size as needed */
-
 }
 
-.quote{
+.quote {
     text-align: center;
     font-family: 'Stopmotion', sans-serif;
     color: #b7ab98;
     font-size: 2.5em; /* Adjust the size as needed */
 }
 
-.projects{
+.projects {
     text-align: center;
     font-family: 'Stopmotion', sans-serif;
     color: #b7ab98;
     font-size: 2.5em; /* Adjust the size as needed */
 }
 
-.proCont{
+.proCont {
     text-align: center;
     font-family: 'Stopmotion', sans-serif;
     color: whitesmoke;
 }
-
 
 .coding {
     text-align: center;
@@ -154,7 +135,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 1rem;
-    gap:8rem;
+    gap: 8rem;
 }
 
 .coding-container {
@@ -171,7 +152,7 @@ section {
     width: 200px;
     text-align: center;
     margin-left: -70px;
-    margin-right: 70px;/* Initial translation */
+    margin-right: 70px; /* Initial translation */
     transition: transform 0.3s ease-in-out, background-color 0.3s ease;
     text-decoration: none; /* Remove underline */
 }
@@ -200,16 +181,6 @@ section {
     margin: 0;
     font-size: 1.2rem;
 }
-
-/* Adjustments for mobile devices */
-@media (max-width: 768px) {
-    .coding-card {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
-
-
 
 #projects-container div {
     border: 1px solid #444; /* Darker border color for contrast */
@@ -271,30 +242,16 @@ section {
     filter: brightness(1.2); /* Lighten the SVG logo on hover */
 }
 
-
 .tool-name h3 {
     margin: 0;
     font-size: 1.2rem;
 }
 
-/* Adjustments for mobile devices */
-@media (max-width: 768px) {
-    .tool-card {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
-
-.touch{
+.touch {
     text-align: center;
     font-family: 'Stopmotion', sans-serif;
     color: #b7ab98;
     font-size: 2.5em; /* Adjust the size as needed */
-}
-
-.contact-icons {
-    display: flex;
-    gap: 10px; /* Adjust spacing between icons */
 }
 
 .contact-icons {
@@ -313,12 +270,13 @@ section {
     color: #b7ab98; /* Change color on hover */
 }
 
-.fContent{
+.fContent {
     text-align: center;
     font-family: 'TT Octosquares Trl', sans-serif;
     color: whitesmoke;
     font-size: 1.5em; /* Adjust the size as needed */
 }
+
 footer {
     margin-top: auto; /* Push the footer to the bottom */
     padding: 1rem;
@@ -328,4 +286,36 @@ footer {
     width: 100%;
     max-width: 1200px; /* Max width for alignment */
     margin-top: 2rem; /* Space above footer */
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    #intro-image img {
+        width: 100%; /* Full width on mobile devices */
+    }
+
+    .header {
+        padding: 0.5rem; /* Reduce padding for mobile devices */
+    }
+
+    .centered-video {
+        height: 20vh; /* Reduce height for mobile devices */
+    }
+
+    .coding-card, .tool-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add margin to separate cards on mobile */
+    }
+
+    .coding-container, .tools-container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        gap: 2rem; /* Adjust gap for mobile */
+    }
+
+    .contact-icons {
+        flex-direction: column; /* Stack icons vertically on mobile */
+        gap: 20px; /* Adjust gap for mobile */
+    }
 }
