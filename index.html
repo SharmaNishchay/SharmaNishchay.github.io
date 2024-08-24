@@ -3,50 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/stopmotion" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/tt-octosquares-trl" rel="stylesheet">
+
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <header class="header">
     <div class="centered-video">
-        <video id="header-video" autoplay muted>
+        <video id="header-video" autoplay muted loop>
             <source src="animation/glitch.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 </header>
 
-<section id="intro-image">
-    <img src="images/Mokoto-removebg.png" alt="Descriptive Alt Text">
-</section>
-
 <section id="about">
-    <h1>About Me</h1>
-    <p>Brief introduction about yourself.</p>
-</section>
+    <div id="about-section">
+        <h1 class="abt">About Me</h1>
+        <p class="text">
+            Hello! I’m Nishchay Sharma, a passionate software developer with a focus on Java programming and a knack for Competitive Programming.
+            <br>
+            <br>
+            With a solid foundation in competitive programming, I’m dedicated to delivering high-quality solutions that solve real-world problems.
+        </p>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div id="projects-container">
-        <!-- Projects will be dynamically loaded here -->
+
     </div>
 </section>
 
+
+
+
 <section id="skills">
-    <h2>Skills</h2>
-    <ul id="skills-list">
-        <!-- Skills will be dynamically loaded here -->
-    </ul>
+    <div id="skills-section">
+        <h1 class="center headings">Skills at a Glance</h1>
+        <div class="tools">
+            <div class="tools-container">
+                <a href="https://www.java.com/" target="_blank" rel="noreferrer">
+                    <div class="tool-card" title="View more">
+                        <div class="tool-dash"></div>
+                        <div class="tool-card-icon">
+                            <img src="images/jdk21.jpg" alt="Java">
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.github.com/" target="_blank" rel="noreferrer">
+                    <div class="tool-card" title="View more">
+                        <div class="tool-dash"></div>
+                        <div class="tool-card-icon">
+                            <img src="images/gitt.png" alt="Github">
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Add more tools here -->
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Contact details or form.</p>
+<section id="projects">
+    <h2 class="projects">Projects</h2>
+    <br>
+    <br>
+    <div id="projects-container">
+        <h3 class="proCont">Coming Soon...</h3>
+    </div>
+</section>
+
+<section>
+    <h2 class="coding">Coding Profiles</h2>
+    <div id="coding-profiles">
+        <a href="https://www.leetcode.com.com/sharmanishchay" target="_blank" rel="noreferrer">
+            <div class="coding-card">
+                <img src="images/lc.png" alt="LeetCode">
+            </div>
+        </a>
+        <a href="https://www.codechef.com/users/sharmanischay" target="_blank" rel="noreferrer">
+            <div class="coding-card">
+                <img src="images/cc.png" alt="CodeChef">
+            </div>
+        </a>
+        <a href="https://www.github.com/sharmanishchay" target="_blank" rel="noreferrer">
+            <div class="coding-card">
+                <img src="images/octo.png" alt="GitHub">
+            </div>
+        </a>
+    </div>
+</section>
+
+<section>
+    <h2 class="quote">
+        Code powered by caffiene, creativity fueled by passion.
+    </h2>
 </section>
 
 <footer>
-    <p>&copy; 2024 NISHCHAY SHARMA</p>
+    <h2 class="touch">Get in touch</h2>
+    <br>
+    <p class="fContent">Let's Build Something Amazing Together!<br><br>
+        Excited about a project idea?
+<br><br>
+        I'm all in for collaborative efforts. Collaboration fuels creativity, and together, we'll build a standout showcase.</p><br>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/nishchay-sharma-ns" target="_blank" class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:nish230101030@iiitmanipur.ac.in" class="contact-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
 </footer>
+
 
 <script src="scripts/script.js"></script>
 </body>
