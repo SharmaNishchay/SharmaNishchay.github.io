@@ -299,10 +299,11 @@ footer {
     }
 
     .centered-video {
-        height: 20vh; /* Reduce height for mobile devices */
+        height: 25vh; /* Reduced height on mobile devices */
     }
 
-    .coding-card, .tool-card {
+    .coding-card,
+    .tool-card {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -311,11 +312,13 @@ footer {
 
     .coding-container, .tools-container {
         flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items horizontally */
         gap: 2rem; /* Adjust gap for mobile */
     }
 
     .contact-icons {
         flex-direction: column; /* Stack icons vertically on mobile */
+        align-items: center; /* Center icons horizontally */
         gap: 20px; /* Adjust gap for mobile */
     }
 }
