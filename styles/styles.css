@@ -307,19 +307,19 @@ footer {
     }
 
     .centered-video {
-        height: 25vh; /* Reduced height on mobile devices */
+        height: 20vh; /* Reduce height for mobile devices */
     }
 
     .coding-card{
         width: 100%;
-        margin-left: -10px;
-        margin-right: 10px;
+        margin-left: -20px;
+        margin-right: 20px;
         margin-bottom: 1rem;
     }
     .tool-card {
         width: 100%;
-        margin-left: 10px;
-        margin-right: -10px;
+        margin-left: 20px;
+        margin-right: -20px;
         margin-bottom: 1rem; /* Add margin to separate cards on mobile */
     }
 
