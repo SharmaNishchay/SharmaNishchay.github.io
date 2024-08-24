@@ -312,21 +312,26 @@ footer {
 
     .coding-card{
         width: 100%;
-        margin-left: -20px;
-        margin-right: 20px;
+        margin-left: 0px;
+        margin-right: 50px;
         margin-bottom: 1rem;
     }
     .tool-card {
         width: 100%;
-        margin-left: 20px;
-        margin-right: -20px;
+        margin-left: -60px;
+        margin-right: -160px;
         margin-bottom: 1rem; /* Add margin to separate cards on mobile */
     }
 
-    .coding-container, .tools-container {
+    .coding-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .tools-container {
         flex-direction: column; /* Stack items vertically on mobile */
         align-items: center; /* Center items horizontally */
-        gap: 2rem; /* Adjust gap for mobile */
+        gap: 0.25rem; /* Adjust gap for mobile */
     }
 
     .contact-icons {
