@@ -23,6 +23,14 @@ body {
     padding: 1rem; /* Adjust padding as needed */
 }
 
+img {
+    pointer-events: none; /* Disables clicking on all images */
+}
+
+/* Alternatively, make images with a specific class non-clickable */
+.non-clickable-image {
+    pointer-events: none; /* Disables clicking on images with this class */
+}
 .centered-video {
     display: flex;
     align-items: center;
@@ -302,11 +310,16 @@ footer {
         height: 25vh; /* Reduced height on mobile devices */
     }
 
-    .coding-card,
+    .coding-card{
+        width: 100%;
+        margin-left: -10px;
+        margin-right: 10px;
+        margin-bottom: 1rem;
+    }
     .tool-card {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 10px;
+        margin-right: -10px;
         margin-bottom: 1rem; /* Add margin to separate cards on mobile */
     }
 
