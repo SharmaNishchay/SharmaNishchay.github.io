@@ -287,7 +287,7 @@ footer {
     margin-top: auto; /* Push the footer to the bottom */
     padding: 1rem;
     text-align: center;
-    background: #222222; /* Dark gray background for the footer */
+    background: linear-gradient(to top, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0)); /* Darker grey-black gradient with a subtle fade effect */
     color: white;
     width: 100%;
     max-width: 1200px; /* Max width for alignment */
