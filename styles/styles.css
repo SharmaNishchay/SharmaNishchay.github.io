@@ -23,9 +23,7 @@ body {
     padding: 1rem; /* Adjust padding as needed */
 }
 
-img {
-    pointer-events: none; /* Disables clicking on all images */
-}
+
 
 /* Alternatively, make images with a specific class non-clickable */
 .non-clickable-image {
