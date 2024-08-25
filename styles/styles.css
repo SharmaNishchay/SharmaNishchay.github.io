@@ -318,7 +318,7 @@ footer {
     }
     .tool-card {
         width: 100%;
-        margin-left: -60px;
+        margin-left: 15px;
         margin-right: -160px;
         margin-bottom: 1rem; /* Add margin to separate cards on mobile */
     }
