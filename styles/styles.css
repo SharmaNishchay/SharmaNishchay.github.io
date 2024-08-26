@@ -310,15 +310,15 @@ footer {
 
     .coding-card,
     .tool-card {
-        width: 152px; /* Ensure the cards are 314px wide */
-        margin: 0 auto 1rem auto; /* Center the cards with auto margins */
+        width: 100%;
+        margin: 0 auto 1rem auto; /* Center cards with margin on tablets */
     }
 
     .coding-container,
     .tools-container,
     .contact-icons {
-        flex-direction: column; /* Stack items vertically on mobile */
+        flex-direction: column; /* Stack items vertically on tablets */
         align-items: center; /* Center items horizontally */
-        gap: 0.5rem; /* Reduce gap for mobile */
+        gap: 1rem; /* Adjust gap for tablets */
     }
 }
