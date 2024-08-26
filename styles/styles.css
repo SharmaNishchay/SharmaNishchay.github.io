@@ -308,33 +308,17 @@ footer {
         height: 20vh; /* Reduce height for mobile devices */
     }
 
-    .coding-card{
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 50px;
-        margin-bottom: 1rem;
-    }
+    .coding-card,
     .tool-card {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 50px;
-        margin-bottom: 1rem; /* Add margin to separate cards on mobile */
+        width: 80%;
+        margin: 0 auto 1rem auto; /* Center cards with margin on tablets */
     }
 
-    .coding-container{
-        flex-direction: column;
-        align-items: center;
-        gap: 0.25rem;
-    }
-    .tools-container {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center items horizontally */
-        gap: 0.25rem; /* Adjust gap for mobile */
-    }
-
+    .coding-container,
+    .tools-container,
     .contact-icons {
-        flex-direction: column; /* Stack icons vertically on mobile */
-        align-items: center; /* Center icons horizontally */
-        gap: 20px; /* Adjust gap for mobile */
+        flex-direction: column; /* Stack items vertically on tablets */
+        align-items: center; /* Center items horizontally */
+        gap: 1rem; /* Adjust gap for tablets */
     }
 }
