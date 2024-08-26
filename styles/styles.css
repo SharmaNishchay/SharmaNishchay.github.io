@@ -310,7 +310,7 @@ footer {
 
     .coding-card,
     .tool-card {
-        width: 152px; /* Ensure the cards are 314px wide */
+        width: 100%; /* Ensure the cards are 314px wide */
         margin: 0 auto 1rem auto; /* Center the cards with auto margins */
     }
 
