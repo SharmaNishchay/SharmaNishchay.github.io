@@ -30,3 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error fetching skills:', error));
 });
+const video = document.getElementById('header-video');
+
+    video.addEventListener('ended', () => {
+        setTimeout(() => {
+            video.play();
+        }, 5000); // 5000ms = 5 seconds delay
+    });
