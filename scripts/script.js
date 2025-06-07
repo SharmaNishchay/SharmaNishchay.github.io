@@ -4,13 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const projectsContainer = document.getElementById('projects-container');
+            projectsContainer.innerHTML = ''; // Clear any "Coming Soon..." message
+
             data.forEach(project => {
                 const projectElement = document.createElement('div');
+                projectElement.className = 'project-card';
+
+                // Create project card with gradient animation but no flip effect
                 projectElement.innerHTML = `
-                    <h3>${project.title}</h3>
-                    <img src="images/${project.image}" alt="${project.title}">
-                    <p>${project.description}</p>
-                    <a href="${project.link}" target="_blank">View Project</a>
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="tech-stack">
+                        <h4 class="tech-stack-title">Tech Stack</h4>
+                        <div class="project-tags">
+                            ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="${project.github}" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
                 `;
                 projectsContainer.appendChild(projectElement);
             });
@@ -22,18 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const skillsList = document.getElementById('skills-list');
-            data.forEach(skill => {
-                const skillItem = document.createElement('li');
-                skillItem.textContent = skill;
-                skillsList.appendChild(skillItem);
-            });
+            if (skillsList) {
+                data.forEach(skill => {
+                    const skillItem = document.createElement('li');
+                    skillItem.textContent = skill;
+                    skillsList.appendChild(skillItem);
+                });
+            }
         })
         .catch(error => console.error('Error fetching skills:', error));
 });
-const video = document.getElementById('header-video');
 
+// Video playback handling
+const video = document.getElementById('header-video');
+if (video) {
     video.addEventListener('ended', () => {
         setTimeout(() => {
             video.play();
         }, 5000); // 5000ms = 5 seconds delay
     });
+}

@@ -94,6 +94,7 @@ section {
     font-family: 'Stopmotion', sans-serif;
     color: #b7ab98;
     font-size: 2.5em; /* Adjust the size as needed */
+    margin-bottom: 1.5rem; /* Added spacing between heading and content */
 }
 
 .text {
@@ -188,11 +189,152 @@ section {
     font-size: 1.2rem;
 }
 
-#projects-container div {
-    border: 1px solid #444; /* Darker border color for contrast */
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: #222; /* Dark background for project containers */
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    width: 350px;
+    min-height: 320px;
+    position: relative;
+    background: linear-gradient(145deg, #121212, #181818);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(183, 171, 152, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 8s infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+    border-color: rgba(183, 171, 152, 0.5);
+}
+
+@keyframes shine {
+    0% {
+        top: -100%;
+        left: -100%;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+}
+
+.project-title {
+    font-family: 'TT Octosquares Trl', sans-serif;
+    color: #b7ab98;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.project-description {
+    font-family: 'TT Octosquares Trl', sans-serif;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+}
+
+.tech-stack-title {
+    font-family: 'TT Octosquares Trl', sans-serif;
+    color: #b7ab98;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.project-tag {
+    background-color: rgba(183, 171, 152, 0.1);
+    color: #b7ab98;
+    padding: 0.35rem 0.8rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-family: 'TT Octosquares Trl', sans-serif;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(183, 171, 152, 0.2);
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #b7ab98;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-family: 'TT Octosquares Trl', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.7rem 2rem;
+    border: 1px solid rgba(183, 171, 152, 0.4);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.github-link:hover {
+    background-color: rgba(183, 171, 152, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.github-link i {
+    font-size: 1.1rem;
 }
 
 #skills-section {
@@ -207,12 +349,22 @@ section {
     justify-content: left;
     margin-top: 1rem;
 }
-
+.tc {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 410px;
+    margin-top: 1.5rem;
+}
+.tc:hover {
+    filter: brightness(1.3); /* Slightly increase brightness on hover */
+    background-color: #000; /* Maintain pitch black color on hover */
+}
 .tools-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8rem;
+    margin-bottom: -1.5rem;
 }
 
 .tool-card {
@@ -320,5 +472,10 @@ footer {
         flex-direction: column; /* Stack items vertically on mobile */
         align-items: center; /* Center items horizontally */
         gap: 0.5rem; /* Reduce gap for mobile */
+    }
+
+    .project-card {
+        width: 100%;
+        min-height: 350px;
     }
 }

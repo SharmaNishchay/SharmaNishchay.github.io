@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "HexaLibre",
+    "description": "Prototyped HexaLibre, a smart library management system for colleges, as part of a 2-person team. Built core modules for QR-based book issuing/returning, college email-based authentication, and real-time book availability tracking. Structured the architecture for scalable backend integration and fine tracking. The prototype lays the groundwork for deployment across institutions with 1,000+ users and 10,000+ books.",
+    "image": "project1.jpg",
+    "tags": ["Java", "XML","Maven","Firebase","Android Studio"],
+    "link": "#",
+    "github": "https://github.com/sharmanishchay/hexalibre"
+  },
+  {
+    "id": 2,
+    "title": "XeroIMS",
+    "description": "Independently developed a scalable inventory management system using Spring Boot that efficiently handles up to 50,000+ SKUs with multi-user support. Implemented a responsive dashboard with status tracking and approval workflows that improved operational decision-making time by 20%. Enhanced database performance through JPA repository optimization and table indexing, reducing query execution time by 30% for common inventory operations.",
+    "image": "project2.jpg",
+    "tags": ["Java", "SpringBoot", "Maven", "MySQL", "HTML", "CSS"],
+    "link": "#",
+    "github": "https://github.com/sharmanishchay/xeroims"
+  }
+]
+
+
+
+
